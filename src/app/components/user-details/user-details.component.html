@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="inner-main">
+      <div class="panel-body">
+        <h2>User Details</h2>
+
+        <hr/>
+        <div *ngIf="user">
+          <div>
+            <label><b>Username: </b></label> {{user.username}}
+          </div>
+          <div>
+            <label><b>Email: </b></label> {{user.email}}
+          </div>
+          <div>
+            <label><b>Address: </b></label> {{user.address}}
+          </div>
+          <div>
+            <h3>+ further variables ...</h3>
+          </div>
+          <div>
+            <label><b>Role: </b></label> {{user.role}}
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <button (click)="gotoList()" class="btn btn-primary">Back to User List</button><br>
+      </div>
+    </div>
+  </div>
+</div>
